@@ -1,0 +1,22 @@
+[
+{
+  "directory": "/mnt/c/Programming/C/tinyshell/build",
+  "command": "/usr/bin/gcc   -g   -o CMakeFiles/tinyshell.dir/tinyshell/tinyshell.c.o   -c /mnt/c/Programming/C/tinyshell/tinyshell/tinyshell.c",
+  "file": "/mnt/c/Programming/C/tinyshell/tinyshell/tinyshell.c"
+},
+{
+  "directory": "/mnt/c/Programming/C/tinyshell/build",
+  "command": "/usr/bin/gcc   -g   -o CMakeFiles/tinyshell.dir/tinyshell/builtin.c.o   -c /mnt/c/Programming/C/tinyshell/tinyshell/builtin.c",
+  "file": "/mnt/c/Programming/C/tinyshell/tinyshell/builtin.c"
+},
+{
+  "directory": "/mnt/c/Programming/C/tinyshell/build",
+  "command": "/usr/bin/gcc   -g   -o CMakeFiles/tinyshell.dir/tinyshell/execute.c.o   -c /mnt/c/Programming/C/tinyshell/tinyshell/execute.c",
+  "file": "/mnt/c/Programming/C/tinyshell/tinyshell/execute.c"
+},
+{
+  "directory": "/mnt/c/Programming/C/tinyshell/build",
+  "command": "/usr/bin/gcc   -g   -o CMakeFiles/tinyshell.dir/tinyshell/redirection.c.o   -c /mnt/c/Programming/C/tinyshell/tinyshell/redirection.c",
+  "file": "/mnt/c/Programming/C/tinyshell/tinyshell/redirection.c"
+}
+]

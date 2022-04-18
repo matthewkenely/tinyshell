@@ -1,0 +1,3 @@
+/mnt/c/Programming/C/tinyshell/build/CMakeFiles/rebuild_cache.dir
+/mnt/c/Programming/C/tinyshell/build/CMakeFiles/edit_cache.dir
+/mnt/c/Programming/C/tinyshell/build/CMakeFiles/tinyshell.dir

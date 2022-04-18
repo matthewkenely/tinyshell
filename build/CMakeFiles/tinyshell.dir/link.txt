@@ -1,0 +1,1 @@
+/usr/bin/gcc -g   CMakeFiles/tinyshell.dir/tinyshell/tinyshell.c.o CMakeFiles/tinyshell.dir/tinyshell/builtin.c.o CMakeFiles/tinyshell.dir/tinyshell/execute.c.o CMakeFiles/tinyshell.dir/tinyshell/redirection.c.o  -o tinyshell 
