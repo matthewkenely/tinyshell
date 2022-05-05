@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/c/Programming/C/tinyshell
+CMAKE_SOURCE_DIR = /home/heliaea/Programming/Assignments/cps1012-assignment
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/c/Programming/C/tinyshell/build
+CMAKE_BINARY_DIR = /home/heliaea/Programming/Assignments/cps1012-assignment/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -78,11 +78,33 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
+# Special rule for the target package
+package: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
+	/usr/bin/cpack --config ./CPackConfig.cmake
+.PHONY : package
+
+# Special rule for the target package
+package/fast: package
+
+.PHONY : package/fast
+
+# Special rule for the target package_source
+package_source:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
+	/usr/bin/cpack --config ./CPackSourceConfig.cmake /home/heliaea/Programming/Assignments/cps1012-assignment/build/CPackSourceConfig.cmake
+.PHONY : package_source
+
+# Special rule for the target package_source
+package_source/fast: package_source
+
+.PHONY : package_source/fast
+
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Programming/C/tinyshell/build/CMakeFiles /mnt/c/Programming/C/tinyshell/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/heliaea/Programming/Assignments/cps1012-assignment/build/CMakeFiles /home/heliaea/Programming/Assignments/cps1012-assignment/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Programming/C/tinyshell/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/heliaea/Programming/Assignments/cps1012-assignment/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -122,6 +144,773 @@ tinyshell: cmake_check_build_system
 tinyshell/fast:
 	$(MAKE) -f CMakeFiles/tinyshell.dir/build.make CMakeFiles/tinyshell.dir/build
 .PHONY : tinyshell/fast
+
+#=============================================================================
+# Target rules for targets named 1b
+
+# Build rule for target.
+1b: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 1b
+.PHONY : 1b
+
+# fast build rule for target.
+1b/fast:
+	$(MAKE) -f CMakeFiles/1b.dir/build.make CMakeFiles/1b.dir/build
+.PHONY : 1b/fast
+
+#=============================================================================
+# Target rules for targets named 2b
+
+# Build rule for target.
+2b: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 2b
+.PHONY : 2b
+
+# fast build rule for target.
+2b/fast:
+	$(MAKE) -f CMakeFiles/2b.dir/build.make CMakeFiles/2b.dir/build
+.PHONY : 2b/fast
+
+#=============================================================================
+# Target rules for targets named 3c
+
+# Build rule for target.
+3c: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 3c
+.PHONY : 3c
+
+# fast build rule for target.
+3c/fast:
+	$(MAKE) -f CMakeFiles/3c.dir/build.make CMakeFiles/3c.dir/build
+.PHONY : 3c/fast
+
+#=============================================================================
+# Target rules for targets named 1c
+
+# Build rule for target.
+1c: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 1c
+.PHONY : 1c
+
+# fast build rule for target.
+1c/fast:
+	$(MAKE) -f CMakeFiles/1c.dir/build.make CMakeFiles/1c.dir/build
+.PHONY : 1c/fast
+
+#=============================================================================
+# Target rules for targets named 1e
+
+# Build rule for target.
+1e: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 1e
+.PHONY : 1e
+
+# fast build rule for target.
+1e/fast:
+	$(MAKE) -f CMakeFiles/1e.dir/build.make CMakeFiles/1e.dir/build
+.PHONY : 1e/fast
+
+#=============================================================================
+# Target rules for targets named 1d
+
+# Build rule for target.
+1d: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 1d
+.PHONY : 1d
+
+# fast build rule for target.
+1d/fast:
+	$(MAKE) -f CMakeFiles/1d.dir/build.make CMakeFiles/1d.dir/build
+.PHONY : 1d/fast
+
+#=============================================================================
+# Target rules for targets named 2a
+
+# Build rule for target.
+2a: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 2a
+.PHONY : 2a
+
+# fast build rule for target.
+2a/fast:
+	$(MAKE) -f CMakeFiles/2a.dir/build.make CMakeFiles/2a.dir/build
+.PHONY : 2a/fast
+
+#=============================================================================
+# Target rules for targets named 3a
+
+# Build rule for target.
+3a: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 3a
+.PHONY : 3a
+
+# fast build rule for target.
+3a/fast:
+	$(MAKE) -f CMakeFiles/3a.dir/build.make CMakeFiles/3a.dir/build
+.PHONY : 3a/fast
+
+#=============================================================================
+# Target rules for targets named 1a
+
+# Build rule for target.
+1a: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 1a
+.PHONY : 1a
+
+# fast build rule for target.
+1a/fast:
+	$(MAKE) -f CMakeFiles/1a.dir/build.make CMakeFiles/1a.dir/build
+.PHONY : 1a/fast
+
+#=============================================================================
+# Target rules for targets named 3b
+
+# Build rule for target.
+3b: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 3b
+.PHONY : 3b
+
+# fast build rule for target.
+3b/fast:
+	$(MAKE) -f CMakeFiles/3b.dir/build.make CMakeFiles/3b.dir/build
+.PHONY : 3b/fast
+
+#=============================================================================
+# Target rules for targets named 3d
+
+# Build rule for target.
+3d: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 3d
+.PHONY : 3d
+
+# fast build rule for target.
+3d/fast:
+	$(MAKE) -f CMakeFiles/3d.dir/build.make CMakeFiles/3d.dir/build
+.PHONY : 3d/fast
+
+#=============================================================================
+# Target rules for targets named 4c
+
+# Build rule for target.
+4c: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 4c
+.PHONY : 4c
+
+# fast build rule for target.
+4c/fast:
+	$(MAKE) -f CMakeFiles/4c.dir/build.make CMakeFiles/4c.dir/build
+.PHONY : 4c/fast
+
+#=============================================================================
+# Target rules for targets named 4b
+
+# Build rule for target.
+4b: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 4b
+.PHONY : 4b
+
+# fast build rule for target.
+4b/fast:
+	$(MAKE) -f CMakeFiles/4b.dir/build.make CMakeFiles/4b.dir/build
+.PHONY : 4b/fast
+
+#=============================================================================
+# Target rules for targets named 4a
+
+# Build rule for target.
+4a: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 4a
+.PHONY : 4a
+
+# fast build rule for target.
+4a/fast:
+	$(MAKE) -f CMakeFiles/4a.dir/build.make CMakeFiles/4a.dir/build
+.PHONY : 4a/fast
+
+tasks/task-1/a.o: tasks/task-1/a.c.o
+
+.PHONY : tasks/task-1/a.o
+
+# target to build an object file
+tasks/task-1/a.c.o:
+	$(MAKE) -f CMakeFiles/1a.dir/build.make CMakeFiles/1a.dir/tasks/task-1/a.c.o
+.PHONY : tasks/task-1/a.c.o
+
+tasks/task-1/a.i: tasks/task-1/a.c.i
+
+.PHONY : tasks/task-1/a.i
+
+# target to preprocess a source file
+tasks/task-1/a.c.i:
+	$(MAKE) -f CMakeFiles/1a.dir/build.make CMakeFiles/1a.dir/tasks/task-1/a.c.i
+.PHONY : tasks/task-1/a.c.i
+
+tasks/task-1/a.s: tasks/task-1/a.c.s
+
+.PHONY : tasks/task-1/a.s
+
+# target to generate assembly for a file
+tasks/task-1/a.c.s:
+	$(MAKE) -f CMakeFiles/1a.dir/build.make CMakeFiles/1a.dir/tasks/task-1/a.c.s
+.PHONY : tasks/task-1/a.c.s
+
+tasks/task-1/b.o: tasks/task-1/b.c.o
+
+.PHONY : tasks/task-1/b.o
+
+# target to build an object file
+tasks/task-1/b.c.o:
+	$(MAKE) -f CMakeFiles/1b.dir/build.make CMakeFiles/1b.dir/tasks/task-1/b.c.o
+.PHONY : tasks/task-1/b.c.o
+
+tasks/task-1/b.i: tasks/task-1/b.c.i
+
+.PHONY : tasks/task-1/b.i
+
+# target to preprocess a source file
+tasks/task-1/b.c.i:
+	$(MAKE) -f CMakeFiles/1b.dir/build.make CMakeFiles/1b.dir/tasks/task-1/b.c.i
+.PHONY : tasks/task-1/b.c.i
+
+tasks/task-1/b.s: tasks/task-1/b.c.s
+
+.PHONY : tasks/task-1/b.s
+
+# target to generate assembly for a file
+tasks/task-1/b.c.s:
+	$(MAKE) -f CMakeFiles/1b.dir/build.make CMakeFiles/1b.dir/tasks/task-1/b.c.s
+.PHONY : tasks/task-1/b.c.s
+
+tasks/task-1/c.o: tasks/task-1/c.c.o
+
+.PHONY : tasks/task-1/c.o
+
+# target to build an object file
+tasks/task-1/c.c.o:
+	$(MAKE) -f CMakeFiles/1c.dir/build.make CMakeFiles/1c.dir/tasks/task-1/c.c.o
+.PHONY : tasks/task-1/c.c.o
+
+tasks/task-1/c.i: tasks/task-1/c.c.i
+
+.PHONY : tasks/task-1/c.i
+
+# target to preprocess a source file
+tasks/task-1/c.c.i:
+	$(MAKE) -f CMakeFiles/1c.dir/build.make CMakeFiles/1c.dir/tasks/task-1/c.c.i
+.PHONY : tasks/task-1/c.c.i
+
+tasks/task-1/c.s: tasks/task-1/c.c.s
+
+.PHONY : tasks/task-1/c.s
+
+# target to generate assembly for a file
+tasks/task-1/c.c.s:
+	$(MAKE) -f CMakeFiles/1c.dir/build.make CMakeFiles/1c.dir/tasks/task-1/c.c.s
+.PHONY : tasks/task-1/c.c.s
+
+tasks/task-1/d.o: tasks/task-1/d.c.o
+
+.PHONY : tasks/task-1/d.o
+
+# target to build an object file
+tasks/task-1/d.c.o:
+	$(MAKE) -f CMakeFiles/1d.dir/build.make CMakeFiles/1d.dir/tasks/task-1/d.c.o
+.PHONY : tasks/task-1/d.c.o
+
+tasks/task-1/d.i: tasks/task-1/d.c.i
+
+.PHONY : tasks/task-1/d.i
+
+# target to preprocess a source file
+tasks/task-1/d.c.i:
+	$(MAKE) -f CMakeFiles/1d.dir/build.make CMakeFiles/1d.dir/tasks/task-1/d.c.i
+.PHONY : tasks/task-1/d.c.i
+
+tasks/task-1/d.s: tasks/task-1/d.c.s
+
+.PHONY : tasks/task-1/d.s
+
+# target to generate assembly for a file
+tasks/task-1/d.c.s:
+	$(MAKE) -f CMakeFiles/1d.dir/build.make CMakeFiles/1d.dir/tasks/task-1/d.c.s
+.PHONY : tasks/task-1/d.c.s
+
+tasks/task-1/e.o: tasks/task-1/e.c.o
+
+.PHONY : tasks/task-1/e.o
+
+# target to build an object file
+tasks/task-1/e.c.o:
+	$(MAKE) -f CMakeFiles/1e.dir/build.make CMakeFiles/1e.dir/tasks/task-1/e.c.o
+.PHONY : tasks/task-1/e.c.o
+
+tasks/task-1/e.i: tasks/task-1/e.c.i
+
+.PHONY : tasks/task-1/e.i
+
+# target to preprocess a source file
+tasks/task-1/e.c.i:
+	$(MAKE) -f CMakeFiles/1e.dir/build.make CMakeFiles/1e.dir/tasks/task-1/e.c.i
+.PHONY : tasks/task-1/e.c.i
+
+tasks/task-1/e.s: tasks/task-1/e.c.s
+
+.PHONY : tasks/task-1/e.s
+
+# target to generate assembly for a file
+tasks/task-1/e.c.s:
+	$(MAKE) -f CMakeFiles/1e.dir/build.make CMakeFiles/1e.dir/tasks/task-1/e.c.s
+.PHONY : tasks/task-1/e.c.s
+
+tasks/task-2/a.o: tasks/task-2/a.c.o
+
+.PHONY : tasks/task-2/a.o
+
+# target to build an object file
+tasks/task-2/a.c.o:
+	$(MAKE) -f CMakeFiles/2a.dir/build.make CMakeFiles/2a.dir/tasks/task-2/a.c.o
+.PHONY : tasks/task-2/a.c.o
+
+tasks/task-2/a.i: tasks/task-2/a.c.i
+
+.PHONY : tasks/task-2/a.i
+
+# target to preprocess a source file
+tasks/task-2/a.c.i:
+	$(MAKE) -f CMakeFiles/2a.dir/build.make CMakeFiles/2a.dir/tasks/task-2/a.c.i
+.PHONY : tasks/task-2/a.c.i
+
+tasks/task-2/a.s: tasks/task-2/a.c.s
+
+.PHONY : tasks/task-2/a.s
+
+# target to generate assembly for a file
+tasks/task-2/a.c.s:
+	$(MAKE) -f CMakeFiles/2a.dir/build.make CMakeFiles/2a.dir/tasks/task-2/a.c.s
+.PHONY : tasks/task-2/a.c.s
+
+tasks/task-2/b.o: tasks/task-2/b.c.o
+
+.PHONY : tasks/task-2/b.o
+
+# target to build an object file
+tasks/task-2/b.c.o:
+	$(MAKE) -f CMakeFiles/2b.dir/build.make CMakeFiles/2b.dir/tasks/task-2/b.c.o
+.PHONY : tasks/task-2/b.c.o
+
+tasks/task-2/b.i: tasks/task-2/b.c.i
+
+.PHONY : tasks/task-2/b.i
+
+# target to preprocess a source file
+tasks/task-2/b.c.i:
+	$(MAKE) -f CMakeFiles/2b.dir/build.make CMakeFiles/2b.dir/tasks/task-2/b.c.i
+.PHONY : tasks/task-2/b.c.i
+
+tasks/task-2/b.s: tasks/task-2/b.c.s
+
+.PHONY : tasks/task-2/b.s
+
+# target to generate assembly for a file
+tasks/task-2/b.c.s:
+	$(MAKE) -f CMakeFiles/2b.dir/build.make CMakeFiles/2b.dir/tasks/task-2/b.c.s
+.PHONY : tasks/task-2/b.c.s
+
+tasks/task-3/a.o: tasks/task-3/a.c.o
+
+.PHONY : tasks/task-3/a.o
+
+# target to build an object file
+tasks/task-3/a.c.o:
+	$(MAKE) -f CMakeFiles/3a.dir/build.make CMakeFiles/3a.dir/tasks/task-3/a.c.o
+.PHONY : tasks/task-3/a.c.o
+
+tasks/task-3/a.i: tasks/task-3/a.c.i
+
+.PHONY : tasks/task-3/a.i
+
+# target to preprocess a source file
+tasks/task-3/a.c.i:
+	$(MAKE) -f CMakeFiles/3a.dir/build.make CMakeFiles/3a.dir/tasks/task-3/a.c.i
+.PHONY : tasks/task-3/a.c.i
+
+tasks/task-3/a.s: tasks/task-3/a.c.s
+
+.PHONY : tasks/task-3/a.s
+
+# target to generate assembly for a file
+tasks/task-3/a.c.s:
+	$(MAKE) -f CMakeFiles/3a.dir/build.make CMakeFiles/3a.dir/tasks/task-3/a.c.s
+.PHONY : tasks/task-3/a.c.s
+
+tasks/task-3/b.o: tasks/task-3/b.c.o
+
+.PHONY : tasks/task-3/b.o
+
+# target to build an object file
+tasks/task-3/b.c.o:
+	$(MAKE) -f CMakeFiles/3b.dir/build.make CMakeFiles/3b.dir/tasks/task-3/b.c.o
+.PHONY : tasks/task-3/b.c.o
+
+tasks/task-3/b.i: tasks/task-3/b.c.i
+
+.PHONY : tasks/task-3/b.i
+
+# target to preprocess a source file
+tasks/task-3/b.c.i:
+	$(MAKE) -f CMakeFiles/3b.dir/build.make CMakeFiles/3b.dir/tasks/task-3/b.c.i
+.PHONY : tasks/task-3/b.c.i
+
+tasks/task-3/b.s: tasks/task-3/b.c.s
+
+.PHONY : tasks/task-3/b.s
+
+# target to generate assembly for a file
+tasks/task-3/b.c.s:
+	$(MAKE) -f CMakeFiles/3b.dir/build.make CMakeFiles/3b.dir/tasks/task-3/b.c.s
+.PHONY : tasks/task-3/b.c.s
+
+tasks/task-3/builtin.o: tasks/task-3/builtin.c.o
+
+.PHONY : tasks/task-3/builtin.o
+
+# target to build an object file
+tasks/task-3/builtin.c.o:
+	$(MAKE) -f CMakeFiles/3c.dir/build.make CMakeFiles/3c.dir/tasks/task-3/builtin.c.o
+	$(MAKE) -f CMakeFiles/3a.dir/build.make CMakeFiles/3a.dir/tasks/task-3/builtin.c.o
+	$(MAKE) -f CMakeFiles/3b.dir/build.make CMakeFiles/3b.dir/tasks/task-3/builtin.c.o
+	$(MAKE) -f CMakeFiles/3d.dir/build.make CMakeFiles/3d.dir/tasks/task-3/builtin.c.o
+.PHONY : tasks/task-3/builtin.c.o
+
+tasks/task-3/builtin.i: tasks/task-3/builtin.c.i
+
+.PHONY : tasks/task-3/builtin.i
+
+# target to preprocess a source file
+tasks/task-3/builtin.c.i:
+	$(MAKE) -f CMakeFiles/3c.dir/build.make CMakeFiles/3c.dir/tasks/task-3/builtin.c.i
+	$(MAKE) -f CMakeFiles/3a.dir/build.make CMakeFiles/3a.dir/tasks/task-3/builtin.c.i
+	$(MAKE) -f CMakeFiles/3b.dir/build.make CMakeFiles/3b.dir/tasks/task-3/builtin.c.i
+	$(MAKE) -f CMakeFiles/3d.dir/build.make CMakeFiles/3d.dir/tasks/task-3/builtin.c.i
+.PHONY : tasks/task-3/builtin.c.i
+
+tasks/task-3/builtin.s: tasks/task-3/builtin.c.s
+
+.PHONY : tasks/task-3/builtin.s
+
+# target to generate assembly for a file
+tasks/task-3/builtin.c.s:
+	$(MAKE) -f CMakeFiles/3c.dir/build.make CMakeFiles/3c.dir/tasks/task-3/builtin.c.s
+	$(MAKE) -f CMakeFiles/3a.dir/build.make CMakeFiles/3a.dir/tasks/task-3/builtin.c.s
+	$(MAKE) -f CMakeFiles/3b.dir/build.make CMakeFiles/3b.dir/tasks/task-3/builtin.c.s
+	$(MAKE) -f CMakeFiles/3d.dir/build.make CMakeFiles/3d.dir/tasks/task-3/builtin.c.s
+.PHONY : tasks/task-3/builtin.c.s
+
+tasks/task-3/c.o: tasks/task-3/c.c.o
+
+.PHONY : tasks/task-3/c.o
+
+# target to build an object file
+tasks/task-3/c.c.o:
+	$(MAKE) -f CMakeFiles/3c.dir/build.make CMakeFiles/3c.dir/tasks/task-3/c.c.o
+.PHONY : tasks/task-3/c.c.o
+
+tasks/task-3/c.i: tasks/task-3/c.c.i
+
+.PHONY : tasks/task-3/c.i
+
+# target to preprocess a source file
+tasks/task-3/c.c.i:
+	$(MAKE) -f CMakeFiles/3c.dir/build.make CMakeFiles/3c.dir/tasks/task-3/c.c.i
+.PHONY : tasks/task-3/c.c.i
+
+tasks/task-3/c.s: tasks/task-3/c.c.s
+
+.PHONY : tasks/task-3/c.s
+
+# target to generate assembly for a file
+tasks/task-3/c.c.s:
+	$(MAKE) -f CMakeFiles/3c.dir/build.make CMakeFiles/3c.dir/tasks/task-3/c.c.s
+.PHONY : tasks/task-3/c.c.s
+
+tasks/task-3/d.o: tasks/task-3/d.c.o
+
+.PHONY : tasks/task-3/d.o
+
+# target to build an object file
+tasks/task-3/d.c.o:
+	$(MAKE) -f CMakeFiles/3d.dir/build.make CMakeFiles/3d.dir/tasks/task-3/d.c.o
+.PHONY : tasks/task-3/d.c.o
+
+tasks/task-3/d.i: tasks/task-3/d.c.i
+
+.PHONY : tasks/task-3/d.i
+
+# target to preprocess a source file
+tasks/task-3/d.c.i:
+	$(MAKE) -f CMakeFiles/3d.dir/build.make CMakeFiles/3d.dir/tasks/task-3/d.c.i
+.PHONY : tasks/task-3/d.c.i
+
+tasks/task-3/d.s: tasks/task-3/d.c.s
+
+.PHONY : tasks/task-3/d.s
+
+# target to generate assembly for a file
+tasks/task-3/d.c.s:
+	$(MAKE) -f CMakeFiles/3d.dir/build.make CMakeFiles/3d.dir/tasks/task-3/d.c.s
+.PHONY : tasks/task-3/d.c.s
+
+tasks/task-3/execute.o: tasks/task-3/execute.c.o
+
+.PHONY : tasks/task-3/execute.o
+
+# target to build an object file
+tasks/task-3/execute.c.o:
+	$(MAKE) -f CMakeFiles/3c.dir/build.make CMakeFiles/3c.dir/tasks/task-3/execute.c.o
+	$(MAKE) -f CMakeFiles/3a.dir/build.make CMakeFiles/3a.dir/tasks/task-3/execute.c.o
+	$(MAKE) -f CMakeFiles/3b.dir/build.make CMakeFiles/3b.dir/tasks/task-3/execute.c.o
+	$(MAKE) -f CMakeFiles/3d.dir/build.make CMakeFiles/3d.dir/tasks/task-3/execute.c.o
+.PHONY : tasks/task-3/execute.c.o
+
+tasks/task-3/execute.i: tasks/task-3/execute.c.i
+
+.PHONY : tasks/task-3/execute.i
+
+# target to preprocess a source file
+tasks/task-3/execute.c.i:
+	$(MAKE) -f CMakeFiles/3c.dir/build.make CMakeFiles/3c.dir/tasks/task-3/execute.c.i
+	$(MAKE) -f CMakeFiles/3a.dir/build.make CMakeFiles/3a.dir/tasks/task-3/execute.c.i
+	$(MAKE) -f CMakeFiles/3b.dir/build.make CMakeFiles/3b.dir/tasks/task-3/execute.c.i
+	$(MAKE) -f CMakeFiles/3d.dir/build.make CMakeFiles/3d.dir/tasks/task-3/execute.c.i
+.PHONY : tasks/task-3/execute.c.i
+
+tasks/task-3/execute.s: tasks/task-3/execute.c.s
+
+.PHONY : tasks/task-3/execute.s
+
+# target to generate assembly for a file
+tasks/task-3/execute.c.s:
+	$(MAKE) -f CMakeFiles/3c.dir/build.make CMakeFiles/3c.dir/tasks/task-3/execute.c.s
+	$(MAKE) -f CMakeFiles/3a.dir/build.make CMakeFiles/3a.dir/tasks/task-3/execute.c.s
+	$(MAKE) -f CMakeFiles/3b.dir/build.make CMakeFiles/3b.dir/tasks/task-3/execute.c.s
+	$(MAKE) -f CMakeFiles/3d.dir/build.make CMakeFiles/3d.dir/tasks/task-3/execute.c.s
+.PHONY : tasks/task-3/execute.c.s
+
+tasks/task-3/redirection.o: tasks/task-3/redirection.c.o
+
+.PHONY : tasks/task-3/redirection.o
+
+# target to build an object file
+tasks/task-3/redirection.c.o:
+	$(MAKE) -f CMakeFiles/3c.dir/build.make CMakeFiles/3c.dir/tasks/task-3/redirection.c.o
+	$(MAKE) -f CMakeFiles/3a.dir/build.make CMakeFiles/3a.dir/tasks/task-3/redirection.c.o
+	$(MAKE) -f CMakeFiles/3b.dir/build.make CMakeFiles/3b.dir/tasks/task-3/redirection.c.o
+	$(MAKE) -f CMakeFiles/3d.dir/build.make CMakeFiles/3d.dir/tasks/task-3/redirection.c.o
+.PHONY : tasks/task-3/redirection.c.o
+
+tasks/task-3/redirection.i: tasks/task-3/redirection.c.i
+
+.PHONY : tasks/task-3/redirection.i
+
+# target to preprocess a source file
+tasks/task-3/redirection.c.i:
+	$(MAKE) -f CMakeFiles/3c.dir/build.make CMakeFiles/3c.dir/tasks/task-3/redirection.c.i
+	$(MAKE) -f CMakeFiles/3a.dir/build.make CMakeFiles/3a.dir/tasks/task-3/redirection.c.i
+	$(MAKE) -f CMakeFiles/3b.dir/build.make CMakeFiles/3b.dir/tasks/task-3/redirection.c.i
+	$(MAKE) -f CMakeFiles/3d.dir/build.make CMakeFiles/3d.dir/tasks/task-3/redirection.c.i
+.PHONY : tasks/task-3/redirection.c.i
+
+tasks/task-3/redirection.s: tasks/task-3/redirection.c.s
+
+.PHONY : tasks/task-3/redirection.s
+
+# target to generate assembly for a file
+tasks/task-3/redirection.c.s:
+	$(MAKE) -f CMakeFiles/3c.dir/build.make CMakeFiles/3c.dir/tasks/task-3/redirection.c.s
+	$(MAKE) -f CMakeFiles/3a.dir/build.make CMakeFiles/3a.dir/tasks/task-3/redirection.c.s
+	$(MAKE) -f CMakeFiles/3b.dir/build.make CMakeFiles/3b.dir/tasks/task-3/redirection.c.s
+	$(MAKE) -f CMakeFiles/3d.dir/build.make CMakeFiles/3d.dir/tasks/task-3/redirection.c.s
+.PHONY : tasks/task-3/redirection.c.s
+
+tasks/task-4/a.o: tasks/task-4/a.c.o
+
+.PHONY : tasks/task-4/a.o
+
+# target to build an object file
+tasks/task-4/a.c.o:
+	$(MAKE) -f CMakeFiles/4a.dir/build.make CMakeFiles/4a.dir/tasks/task-4/a.c.o
+.PHONY : tasks/task-4/a.c.o
+
+tasks/task-4/a.i: tasks/task-4/a.c.i
+
+.PHONY : tasks/task-4/a.i
+
+# target to preprocess a source file
+tasks/task-4/a.c.i:
+	$(MAKE) -f CMakeFiles/4a.dir/build.make CMakeFiles/4a.dir/tasks/task-4/a.c.i
+.PHONY : tasks/task-4/a.c.i
+
+tasks/task-4/a.s: tasks/task-4/a.c.s
+
+.PHONY : tasks/task-4/a.s
+
+# target to generate assembly for a file
+tasks/task-4/a.c.s:
+	$(MAKE) -f CMakeFiles/4a.dir/build.make CMakeFiles/4a.dir/tasks/task-4/a.c.s
+.PHONY : tasks/task-4/a.c.s
+
+tasks/task-4/b.o: tasks/task-4/b.c.o
+
+.PHONY : tasks/task-4/b.o
+
+# target to build an object file
+tasks/task-4/b.c.o:
+	$(MAKE) -f CMakeFiles/4b.dir/build.make CMakeFiles/4b.dir/tasks/task-4/b.c.o
+.PHONY : tasks/task-4/b.c.o
+
+tasks/task-4/b.i: tasks/task-4/b.c.i
+
+.PHONY : tasks/task-4/b.i
+
+# target to preprocess a source file
+tasks/task-4/b.c.i:
+	$(MAKE) -f CMakeFiles/4b.dir/build.make CMakeFiles/4b.dir/tasks/task-4/b.c.i
+.PHONY : tasks/task-4/b.c.i
+
+tasks/task-4/b.s: tasks/task-4/b.c.s
+
+.PHONY : tasks/task-4/b.s
+
+# target to generate assembly for a file
+tasks/task-4/b.c.s:
+	$(MAKE) -f CMakeFiles/4b.dir/build.make CMakeFiles/4b.dir/tasks/task-4/b.c.s
+.PHONY : tasks/task-4/b.c.s
+
+tasks/task-4/builtin.o: tasks/task-4/builtin.c.o
+
+.PHONY : tasks/task-4/builtin.o
+
+# target to build an object file
+tasks/task-4/builtin.c.o:
+	$(MAKE) -f CMakeFiles/4c.dir/build.make CMakeFiles/4c.dir/tasks/task-4/builtin.c.o
+	$(MAKE) -f CMakeFiles/4b.dir/build.make CMakeFiles/4b.dir/tasks/task-4/builtin.c.o
+	$(MAKE) -f CMakeFiles/4a.dir/build.make CMakeFiles/4a.dir/tasks/task-4/builtin.c.o
+.PHONY : tasks/task-4/builtin.c.o
+
+tasks/task-4/builtin.i: tasks/task-4/builtin.c.i
+
+.PHONY : tasks/task-4/builtin.i
+
+# target to preprocess a source file
+tasks/task-4/builtin.c.i:
+	$(MAKE) -f CMakeFiles/4c.dir/build.make CMakeFiles/4c.dir/tasks/task-4/builtin.c.i
+	$(MAKE) -f CMakeFiles/4b.dir/build.make CMakeFiles/4b.dir/tasks/task-4/builtin.c.i
+	$(MAKE) -f CMakeFiles/4a.dir/build.make CMakeFiles/4a.dir/tasks/task-4/builtin.c.i
+.PHONY : tasks/task-4/builtin.c.i
+
+tasks/task-4/builtin.s: tasks/task-4/builtin.c.s
+
+.PHONY : tasks/task-4/builtin.s
+
+# target to generate assembly for a file
+tasks/task-4/builtin.c.s:
+	$(MAKE) -f CMakeFiles/4c.dir/build.make CMakeFiles/4c.dir/tasks/task-4/builtin.c.s
+	$(MAKE) -f CMakeFiles/4b.dir/build.make CMakeFiles/4b.dir/tasks/task-4/builtin.c.s
+	$(MAKE) -f CMakeFiles/4a.dir/build.make CMakeFiles/4a.dir/tasks/task-4/builtin.c.s
+.PHONY : tasks/task-4/builtin.c.s
+
+tasks/task-4/c.o: tasks/task-4/c.c.o
+
+.PHONY : tasks/task-4/c.o
+
+# target to build an object file
+tasks/task-4/c.c.o:
+	$(MAKE) -f CMakeFiles/4c.dir/build.make CMakeFiles/4c.dir/tasks/task-4/c.c.o
+.PHONY : tasks/task-4/c.c.o
+
+tasks/task-4/c.i: tasks/task-4/c.c.i
+
+.PHONY : tasks/task-4/c.i
+
+# target to preprocess a source file
+tasks/task-4/c.c.i:
+	$(MAKE) -f CMakeFiles/4c.dir/build.make CMakeFiles/4c.dir/tasks/task-4/c.c.i
+.PHONY : tasks/task-4/c.c.i
+
+tasks/task-4/c.s: tasks/task-4/c.c.s
+
+.PHONY : tasks/task-4/c.s
+
+# target to generate assembly for a file
+tasks/task-4/c.c.s:
+	$(MAKE) -f CMakeFiles/4c.dir/build.make CMakeFiles/4c.dir/tasks/task-4/c.c.s
+.PHONY : tasks/task-4/c.c.s
+
+tasks/task-4/execute.o: tasks/task-4/execute.c.o
+
+.PHONY : tasks/task-4/execute.o
+
+# target to build an object file
+tasks/task-4/execute.c.o:
+	$(MAKE) -f CMakeFiles/4c.dir/build.make CMakeFiles/4c.dir/tasks/task-4/execute.c.o
+	$(MAKE) -f CMakeFiles/4b.dir/build.make CMakeFiles/4b.dir/tasks/task-4/execute.c.o
+	$(MAKE) -f CMakeFiles/4a.dir/build.make CMakeFiles/4a.dir/tasks/task-4/execute.c.o
+.PHONY : tasks/task-4/execute.c.o
+
+tasks/task-4/execute.i: tasks/task-4/execute.c.i
+
+.PHONY : tasks/task-4/execute.i
+
+# target to preprocess a source file
+tasks/task-4/execute.c.i:
+	$(MAKE) -f CMakeFiles/4c.dir/build.make CMakeFiles/4c.dir/tasks/task-4/execute.c.i
+	$(MAKE) -f CMakeFiles/4b.dir/build.make CMakeFiles/4b.dir/tasks/task-4/execute.c.i
+	$(MAKE) -f CMakeFiles/4a.dir/build.make CMakeFiles/4a.dir/tasks/task-4/execute.c.i
+.PHONY : tasks/task-4/execute.c.i
+
+tasks/task-4/execute.s: tasks/task-4/execute.c.s
+
+.PHONY : tasks/task-4/execute.s
+
+# target to generate assembly for a file
+tasks/task-4/execute.c.s:
+	$(MAKE) -f CMakeFiles/4c.dir/build.make CMakeFiles/4c.dir/tasks/task-4/execute.c.s
+	$(MAKE) -f CMakeFiles/4b.dir/build.make CMakeFiles/4b.dir/tasks/task-4/execute.c.s
+	$(MAKE) -f CMakeFiles/4a.dir/build.make CMakeFiles/4a.dir/tasks/task-4/execute.c.s
+.PHONY : tasks/task-4/execute.c.s
+
+tasks/task-4/redirection.o: tasks/task-4/redirection.c.o
+
+.PHONY : tasks/task-4/redirection.o
+
+# target to build an object file
+tasks/task-4/redirection.c.o:
+	$(MAKE) -f CMakeFiles/4c.dir/build.make CMakeFiles/4c.dir/tasks/task-4/redirection.c.o
+	$(MAKE) -f CMakeFiles/4b.dir/build.make CMakeFiles/4b.dir/tasks/task-4/redirection.c.o
+	$(MAKE) -f CMakeFiles/4a.dir/build.make CMakeFiles/4a.dir/tasks/task-4/redirection.c.o
+.PHONY : tasks/task-4/redirection.c.o
+
+tasks/task-4/redirection.i: tasks/task-4/redirection.c.i
+
+.PHONY : tasks/task-4/redirection.i
+
+# target to preprocess a source file
+tasks/task-4/redirection.c.i:
+	$(MAKE) -f CMakeFiles/4c.dir/build.make CMakeFiles/4c.dir/tasks/task-4/redirection.c.i
+	$(MAKE) -f CMakeFiles/4b.dir/build.make CMakeFiles/4b.dir/tasks/task-4/redirection.c.i
+	$(MAKE) -f CMakeFiles/4a.dir/build.make CMakeFiles/4a.dir/tasks/task-4/redirection.c.i
+.PHONY : tasks/task-4/redirection.c.i
+
+tasks/task-4/redirection.s: tasks/task-4/redirection.c.s
+
+.PHONY : tasks/task-4/redirection.s
+
+# target to generate assembly for a file
+tasks/task-4/redirection.c.s:
+	$(MAKE) -f CMakeFiles/4c.dir/build.make CMakeFiles/4c.dir/tasks/task-4/redirection.c.s
+	$(MAKE) -f CMakeFiles/4b.dir/build.make CMakeFiles/4b.dir/tasks/task-4/redirection.c.s
+	$(MAKE) -f CMakeFiles/4a.dir/build.make CMakeFiles/4a.dir/tasks/task-4/redirection.c.s
+.PHONY : tasks/task-4/redirection.c.s
 
 tinyshell/builtin.o: tinyshell/builtin.c.o
 
@@ -239,7 +1028,83 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... package"
 	@echo "... tinyshell"
+	@echo "... 1b"
+	@echo "... 2b"
+	@echo "... package_source"
+	@echo "... 3c"
+	@echo "... 1c"
+	@echo "... 1e"
+	@echo "... 1d"
+	@echo "... 2a"
+	@echo "... 3a"
+	@echo "... 1a"
+	@echo "... 3b"
+	@echo "... 3d"
+	@echo "... 4c"
+	@echo "... 4b"
+	@echo "... 4a"
+	@echo "... tasks/task-1/a.o"
+	@echo "... tasks/task-1/a.i"
+	@echo "... tasks/task-1/a.s"
+	@echo "... tasks/task-1/b.o"
+	@echo "... tasks/task-1/b.i"
+	@echo "... tasks/task-1/b.s"
+	@echo "... tasks/task-1/c.o"
+	@echo "... tasks/task-1/c.i"
+	@echo "... tasks/task-1/c.s"
+	@echo "... tasks/task-1/d.o"
+	@echo "... tasks/task-1/d.i"
+	@echo "... tasks/task-1/d.s"
+	@echo "... tasks/task-1/e.o"
+	@echo "... tasks/task-1/e.i"
+	@echo "... tasks/task-1/e.s"
+	@echo "... tasks/task-2/a.o"
+	@echo "... tasks/task-2/a.i"
+	@echo "... tasks/task-2/a.s"
+	@echo "... tasks/task-2/b.o"
+	@echo "... tasks/task-2/b.i"
+	@echo "... tasks/task-2/b.s"
+	@echo "... tasks/task-3/a.o"
+	@echo "... tasks/task-3/a.i"
+	@echo "... tasks/task-3/a.s"
+	@echo "... tasks/task-3/b.o"
+	@echo "... tasks/task-3/b.i"
+	@echo "... tasks/task-3/b.s"
+	@echo "... tasks/task-3/builtin.o"
+	@echo "... tasks/task-3/builtin.i"
+	@echo "... tasks/task-3/builtin.s"
+	@echo "... tasks/task-3/c.o"
+	@echo "... tasks/task-3/c.i"
+	@echo "... tasks/task-3/c.s"
+	@echo "... tasks/task-3/d.o"
+	@echo "... tasks/task-3/d.i"
+	@echo "... tasks/task-3/d.s"
+	@echo "... tasks/task-3/execute.o"
+	@echo "... tasks/task-3/execute.i"
+	@echo "... tasks/task-3/execute.s"
+	@echo "... tasks/task-3/redirection.o"
+	@echo "... tasks/task-3/redirection.i"
+	@echo "... tasks/task-3/redirection.s"
+	@echo "... tasks/task-4/a.o"
+	@echo "... tasks/task-4/a.i"
+	@echo "... tasks/task-4/a.s"
+	@echo "... tasks/task-4/b.o"
+	@echo "... tasks/task-4/b.i"
+	@echo "... tasks/task-4/b.s"
+	@echo "... tasks/task-4/builtin.o"
+	@echo "... tasks/task-4/builtin.i"
+	@echo "... tasks/task-4/builtin.s"
+	@echo "... tasks/task-4/c.o"
+	@echo "... tasks/task-4/c.i"
+	@echo "... tasks/task-4/c.s"
+	@echo "... tasks/task-4/execute.o"
+	@echo "... tasks/task-4/execute.i"
+	@echo "... tasks/task-4/execute.s"
+	@echo "... tasks/task-4/redirection.o"
+	@echo "... tasks/task-4/redirection.i"
+	@echo "... tasks/task-4/redirection.s"
 	@echo "... tinyshell/builtin.o"
 	@echo "... tinyshell/builtin.i"
 	@echo "... tinyshell/builtin.s"

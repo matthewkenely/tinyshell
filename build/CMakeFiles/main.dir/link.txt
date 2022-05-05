@@ -1,0 +1,1 @@
+/usr/bin/gcc -g   CMakeFiles/main.dir/task-4/main.c.o CMakeFiles/main.dir/task-4/builtin.c.o CMakeFiles/main.dir/task-4/execute.c.o CMakeFiles/main.dir/task-4/redirection.c.o  -o main 

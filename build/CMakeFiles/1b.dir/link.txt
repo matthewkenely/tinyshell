@@ -1,0 +1,1 @@
+/usr/bin/gcc -g   CMakeFiles/1b.dir/tasks/task-1/b.c.o  -o 1b 

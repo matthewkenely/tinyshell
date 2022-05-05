@@ -1,4 +1,4 @@
-# Install script for directory: /mnt/c/Programming/C/tinyshell
+# Install script for directory: /home/heliaea/Programming/Assignments/cps1012-assignment
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/mnt/c/Programming/C/tinyshell/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/heliaea/Programming/Assignments/cps1012-assignment/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -1,0 +1,1 @@
+/usr/bin/gcc -g   CMakeFiles/1ea.dir/tasks/task-1/e.c.o  -o 1ea 

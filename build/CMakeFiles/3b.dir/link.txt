@@ -1,0 +1,1 @@
+/usr/bin/gcc -g   CMakeFiles/3b.dir/tasks/task-3/b.c.o CMakeFiles/3b.dir/tasks/task-3/builtin.c.o CMakeFiles/3b.dir/tasks/task-3/execute.c.o CMakeFiles/3b.dir/tasks/task-3/redirection.c.o  -o 3b 

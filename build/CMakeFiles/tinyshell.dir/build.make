@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/c/Programming/C/tinyshell
+CMAKE_SOURCE_DIR = /home/heliaea/Programming/Assignments/cps1012-assignment
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/c/Programming/C/tinyshell/build
+CMAKE_BINARY_DIR = /home/heliaea/Programming/Assignments/cps1012-assignment/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/tinyshell.dir/depend.make
@@ -59,55 +59,55 @@ include CMakeFiles/tinyshell.dir/flags.make
 
 CMakeFiles/tinyshell.dir/tinyshell/tinyshell.c.o: CMakeFiles/tinyshell.dir/flags.make
 CMakeFiles/tinyshell.dir/tinyshell/tinyshell.c.o: ../tinyshell/tinyshell.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Programming/C/tinyshell/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/tinyshell.dir/tinyshell/tinyshell.c.o"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/tinyshell.dir/tinyshell/tinyshell.c.o   -c /mnt/c/Programming/C/tinyshell/tinyshell/tinyshell.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/heliaea/Programming/Assignments/cps1012-assignment/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/tinyshell.dir/tinyshell/tinyshell.c.o"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/tinyshell.dir/tinyshell/tinyshell.c.o   -c /home/heliaea/Programming/Assignments/cps1012-assignment/tinyshell/tinyshell.c
 
 CMakeFiles/tinyshell.dir/tinyshell/tinyshell.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/tinyshell.dir/tinyshell/tinyshell.c.i"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/c/Programming/C/tinyshell/tinyshell/tinyshell.c > CMakeFiles/tinyshell.dir/tinyshell/tinyshell.c.i
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/heliaea/Programming/Assignments/cps1012-assignment/tinyshell/tinyshell.c > CMakeFiles/tinyshell.dir/tinyshell/tinyshell.c.i
 
 CMakeFiles/tinyshell.dir/tinyshell/tinyshell.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/tinyshell.dir/tinyshell/tinyshell.c.s"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/c/Programming/C/tinyshell/tinyshell/tinyshell.c -o CMakeFiles/tinyshell.dir/tinyshell/tinyshell.c.s
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/heliaea/Programming/Assignments/cps1012-assignment/tinyshell/tinyshell.c -o CMakeFiles/tinyshell.dir/tinyshell/tinyshell.c.s
 
 CMakeFiles/tinyshell.dir/tinyshell/builtin.c.o: CMakeFiles/tinyshell.dir/flags.make
 CMakeFiles/tinyshell.dir/tinyshell/builtin.c.o: ../tinyshell/builtin.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Programming/C/tinyshell/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/tinyshell.dir/tinyshell/builtin.c.o"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/tinyshell.dir/tinyshell/builtin.c.o   -c /mnt/c/Programming/C/tinyshell/tinyshell/builtin.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/heliaea/Programming/Assignments/cps1012-assignment/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/tinyshell.dir/tinyshell/builtin.c.o"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/tinyshell.dir/tinyshell/builtin.c.o   -c /home/heliaea/Programming/Assignments/cps1012-assignment/tinyshell/builtin.c
 
 CMakeFiles/tinyshell.dir/tinyshell/builtin.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/tinyshell.dir/tinyshell/builtin.c.i"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/c/Programming/C/tinyshell/tinyshell/builtin.c > CMakeFiles/tinyshell.dir/tinyshell/builtin.c.i
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/heliaea/Programming/Assignments/cps1012-assignment/tinyshell/builtin.c > CMakeFiles/tinyshell.dir/tinyshell/builtin.c.i
 
 CMakeFiles/tinyshell.dir/tinyshell/builtin.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/tinyshell.dir/tinyshell/builtin.c.s"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/c/Programming/C/tinyshell/tinyshell/builtin.c -o CMakeFiles/tinyshell.dir/tinyshell/builtin.c.s
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/heliaea/Programming/Assignments/cps1012-assignment/tinyshell/builtin.c -o CMakeFiles/tinyshell.dir/tinyshell/builtin.c.s
 
 CMakeFiles/tinyshell.dir/tinyshell/execute.c.o: CMakeFiles/tinyshell.dir/flags.make
 CMakeFiles/tinyshell.dir/tinyshell/execute.c.o: ../tinyshell/execute.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Programming/C/tinyshell/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/tinyshell.dir/tinyshell/execute.c.o"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/tinyshell.dir/tinyshell/execute.c.o   -c /mnt/c/Programming/C/tinyshell/tinyshell/execute.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/heliaea/Programming/Assignments/cps1012-assignment/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/tinyshell.dir/tinyshell/execute.c.o"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/tinyshell.dir/tinyshell/execute.c.o   -c /home/heliaea/Programming/Assignments/cps1012-assignment/tinyshell/execute.c
 
 CMakeFiles/tinyshell.dir/tinyshell/execute.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/tinyshell.dir/tinyshell/execute.c.i"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/c/Programming/C/tinyshell/tinyshell/execute.c > CMakeFiles/tinyshell.dir/tinyshell/execute.c.i
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/heliaea/Programming/Assignments/cps1012-assignment/tinyshell/execute.c > CMakeFiles/tinyshell.dir/tinyshell/execute.c.i
 
 CMakeFiles/tinyshell.dir/tinyshell/execute.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/tinyshell.dir/tinyshell/execute.c.s"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/c/Programming/C/tinyshell/tinyshell/execute.c -o CMakeFiles/tinyshell.dir/tinyshell/execute.c.s
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/heliaea/Programming/Assignments/cps1012-assignment/tinyshell/execute.c -o CMakeFiles/tinyshell.dir/tinyshell/execute.c.s
 
 CMakeFiles/tinyshell.dir/tinyshell/redirection.c.o: CMakeFiles/tinyshell.dir/flags.make
 CMakeFiles/tinyshell.dir/tinyshell/redirection.c.o: ../tinyshell/redirection.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Programming/C/tinyshell/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/tinyshell.dir/tinyshell/redirection.c.o"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/tinyshell.dir/tinyshell/redirection.c.o   -c /mnt/c/Programming/C/tinyshell/tinyshell/redirection.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/heliaea/Programming/Assignments/cps1012-assignment/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/tinyshell.dir/tinyshell/redirection.c.o"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/tinyshell.dir/tinyshell/redirection.c.o   -c /home/heliaea/Programming/Assignments/cps1012-assignment/tinyshell/redirection.c
 
 CMakeFiles/tinyshell.dir/tinyshell/redirection.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/tinyshell.dir/tinyshell/redirection.c.i"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/c/Programming/C/tinyshell/tinyshell/redirection.c > CMakeFiles/tinyshell.dir/tinyshell/redirection.c.i
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/heliaea/Programming/Assignments/cps1012-assignment/tinyshell/redirection.c > CMakeFiles/tinyshell.dir/tinyshell/redirection.c.i
 
 CMakeFiles/tinyshell.dir/tinyshell/redirection.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/tinyshell.dir/tinyshell/redirection.c.s"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/c/Programming/C/tinyshell/tinyshell/redirection.c -o CMakeFiles/tinyshell.dir/tinyshell/redirection.c.s
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/heliaea/Programming/Assignments/cps1012-assignment/tinyshell/redirection.c -o CMakeFiles/tinyshell.dir/tinyshell/redirection.c.s
 
 # Object files for target tinyshell
 tinyshell_OBJECTS = \
@@ -125,7 +125,7 @@ tinyshell: CMakeFiles/tinyshell.dir/tinyshell/execute.c.o
 tinyshell: CMakeFiles/tinyshell.dir/tinyshell/redirection.c.o
 tinyshell: CMakeFiles/tinyshell.dir/build.make
 tinyshell: CMakeFiles/tinyshell.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/c/Programming/C/tinyshell/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C executable tinyshell"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/heliaea/Programming/Assignments/cps1012-assignment/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C executable tinyshell"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/tinyshell.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -138,6 +138,6 @@ CMakeFiles/tinyshell.dir/clean:
 .PHONY : CMakeFiles/tinyshell.dir/clean
 
 CMakeFiles/tinyshell.dir/depend:
-	cd /mnt/c/Programming/C/tinyshell/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/c/Programming/C/tinyshell /mnt/c/Programming/C/tinyshell /mnt/c/Programming/C/tinyshell/build /mnt/c/Programming/C/tinyshell/build /mnt/c/Programming/C/tinyshell/build/CMakeFiles/tinyshell.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/heliaea/Programming/Assignments/cps1012-assignment/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/heliaea/Programming/Assignments/cps1012-assignment /home/heliaea/Programming/Assignments/cps1012-assignment /home/heliaea/Programming/Assignments/cps1012-assignment/build /home/heliaea/Programming/Assignments/cps1012-assignment/build /home/heliaea/Programming/Assignments/cps1012-assignment/build/CMakeFiles/tinyshell.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/tinyshell.dir/depend
 

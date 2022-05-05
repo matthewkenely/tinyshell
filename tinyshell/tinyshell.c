@@ -9,12 +9,12 @@
 #include "tinyshell.h"
 
 /* -------------------------------------- CONSTANTS -------------------------------------- */
-#define MAX_IN 256          // Max number of characters to read using fgets()
-#define MAX_PIPELINES 8     // Max number of pipelines ([ls | grep c]; [echo h])
-#define MAX_COMMANDS 8      // Max number of commands ([ls] | [grep c])
-#define MAX_ARGS 8          // Max number of arguments per command ([grep] [c])
-#define MAX_TOKEN_LENGTH 32 // Max token length per argument ([g][r][e][p])
-#define MAX_FILE 64         // Max in/out file name length
+#define MAX_IN 256           // Max number of characters to read using fgets()
+#define MAX_PIPELINES 8      // Max number of pipelines ([ls | grep c]; [echo h])
+#define MAX_COMMANDS 8       // Max number of commands ([ls] | [grep c])
+#define MAX_ARGS 8           // Max number of arguments per command ([grep] [c])
+#define MAX_TOKEN_LENGTH 256 // Max token length per argument ([g][r][e][p])
+#define MAX_FILE 64          // Max in/out file name length
 
 /* ------------------------------------- ANSI COLORS ------------------------------------- */
 #define ANSI_PROMPT "\e[0;33m"
@@ -324,6 +324,37 @@ int read_and_exec()
                     continue;
                 }
 
+                if (status_output_redirect)
+                {
+                    if (out_waiting) // First out file character which is not a space
+                    {
+                        continue;
+                    }
+                    else // First space encountered while reading out file
+                    {
+                        file_out[out_i] = '\0';
+                        status_output_redirect = false;
+                        out_waiting = false;
+                        // wait_for_semicolon = true;
+                        continue;
+                    }
+                }
+
+                if (status_input_redirect)
+                {
+                    if (in_waiting)
+                    {
+                        continue;
+                    }
+                    else
+                    {
+                        file_in[in_i] = '\0';
+                        status_input_redirect = false;
+                        in_waiting = false;
+                        continue;
+                    }
+                }
+
                 status_pipe = true;
                 status_output_redirect = false;
                 status_input_redirect = false;
@@ -356,7 +387,7 @@ int read_and_exec()
 
             if (do_output_redirect)
             {
-                fprintf(stderr, "Syntax error near unexpected token [%c]\n", ">>");
+                fprintf(stderr, "Syntax error near unexpected token [%s]\n", ">>");
                 return EXIT_FAILURE;
             }
 
@@ -395,8 +426,6 @@ int read_and_exec()
 
             do_output_redirect = true;
 
-            do_pipe = false;
-
             out_waiting = true;
 
             pipeline[i][j][k] = '\0';
@@ -413,7 +442,7 @@ int read_and_exec()
                 fprintf(stderr, "Syntax error near unexpected token [%s]\n", "<");
                 return EXIT_FAILURE;
             }
-            
+
             if (do_input_redirect)
             {
                 fprintf(stderr, "Syntax error near unexpected token [%c]\n", in_buf[c]);
@@ -456,7 +485,7 @@ int read_and_exec()
                     file_out[out_i] = '\0';
                     status_output_redirect = false;
                     out_waiting = false;
-                    wait_for_semicolon = true;
+                    // wait_for_semicolon = true;
                     continue;
                 }
             }
@@ -519,7 +548,7 @@ int read_and_exec()
         }
 
         // [\] Strip metacharacter meaning of following character
-        else if (!status_quote && in_buf[c] == '\\')
+        else if (in_buf[c] == '\\')
         {
             if (k + 1 >= MAX_TOKEN_LENGTH)
             {
@@ -681,6 +710,12 @@ int read_and_exec()
             char_encountered = true;
             status_pipe = false;
         }
+    }
+
+    if (status_quote)
+    {
+        fprintf(stderr, "Syntax error: mismatched quotes\n");
+        return EXIT_FAILURE;
     }
 
     pipeline[i][j + 1] = NULL;

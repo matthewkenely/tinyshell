@@ -1,0 +1,1 @@
+/usr/bin/gcc -g   CMakeFiles/4d.dir/tasks/task-3/d.c.o CMakeFiles/4d.dir/tasks/task-3/builtin.c.o CMakeFiles/4d.dir/tasks/task-3/execute.c.o CMakeFiles/4d.dir/tasks/task-3/redirection.c.o  -o 4d 

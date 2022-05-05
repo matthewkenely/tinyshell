@@ -1,0 +1,1 @@
+/usr/bin/gcc -g   CMakeFiles/c-new.dir/task-4/c-new.c.o CMakeFiles/c-new.dir/task-4/builtin.c.o CMakeFiles/c-new.dir/task-4/execute.c.o CMakeFiles/c-new.dir/task-4/redirection.c.o  -o c-new 

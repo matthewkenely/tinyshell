@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/heliaea/Programming/Assignments/cps1012-assignment/tasks/task-1/d.c
+stdio.h
+-
+stdlib.h
+-
+unistd.h
+-
+stdbool.h
+-
+sys/wait.h
+-
+

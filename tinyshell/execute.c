@@ -110,7 +110,7 @@ int execute_pipeline(int argc, char **pipeline[], bool async, char *file_in, cha
 
             if (execvp(**pipeline, *pipeline) == -1)
             {
-                perror("execvp() failed");
+                perror("Execution failed");
                 exit(EXIT_FAILURE);
             }
 

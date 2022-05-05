@@ -4,10 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/mnt/c/Programming/C/tinyshell/tinyshell/builtin.c" "/mnt/c/Programming/C/tinyshell/build/CMakeFiles/tinyshell.dir/tinyshell/builtin.c.o"
-  "/mnt/c/Programming/C/tinyshell/tinyshell/execute.c" "/mnt/c/Programming/C/tinyshell/build/CMakeFiles/tinyshell.dir/tinyshell/execute.c.o"
-  "/mnt/c/Programming/C/tinyshell/tinyshell/redirection.c" "/mnt/c/Programming/C/tinyshell/build/CMakeFiles/tinyshell.dir/tinyshell/redirection.c.o"
-  "/mnt/c/Programming/C/tinyshell/tinyshell/tinyshell.c" "/mnt/c/Programming/C/tinyshell/build/CMakeFiles/tinyshell.dir/tinyshell/tinyshell.c.o"
+  "/home/heliaea/Programming/Assignments/cps1012-assignment/tinyshell/builtin.c" "/home/heliaea/Programming/Assignments/cps1012-assignment/build/CMakeFiles/tinyshell.dir/tinyshell/builtin.c.o"
+  "/home/heliaea/Programming/Assignments/cps1012-assignment/tinyshell/execute.c" "/home/heliaea/Programming/Assignments/cps1012-assignment/build/CMakeFiles/tinyshell.dir/tinyshell/execute.c.o"
+  "/home/heliaea/Programming/Assignments/cps1012-assignment/tinyshell/redirection.c" "/home/heliaea/Programming/Assignments/cps1012-assignment/build/CMakeFiles/tinyshell.dir/tinyshell/redirection.c.o"
+  "/home/heliaea/Programming/Assignments/cps1012-assignment/tinyshell/tinyshell.c" "/home/heliaea/Programming/Assignments/cps1012-assignment/build/CMakeFiles/tinyshell.dir/tinyshell/tinyshell.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
